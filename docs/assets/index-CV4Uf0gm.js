@@ -8,11 +8,11 @@
 
     <section class="card">
       <button class="btn inbound" data-direction="inbound">
-        Inbound (to work)
+        Inbound (Go to work)
         <span class="meta">${r.home} → ${r.work}</span>
       </button>
       <button class="btn outbound" data-direction="outbound">
-        Outbound (to home)
+        Outbound (Go home)
         <span class="meta">${r.work} → ${r.home}</span>
       </button>
     </section>
