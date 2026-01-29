@@ -1,7 +1,12 @@
 :root {
   color-scheme: light;
   font-family: "Space Grotesk", "Avenir Next", system-ui, sans-serif;
-  background: radial-gradient(circle at top, #f8efe2 0%, #f3e7d7 40%, #efe0cb 100%);
+  background: radial-gradient(
+    circle at top,
+    #f8efe2 0%,
+    #f3e7d7 40%,
+    #efe0cb 100%
+  );
   color: #1f1a14;
 }
 
@@ -64,14 +69,28 @@ h1 {
   border: none;
   border-radius: 18px;
   padding: 20px 18px;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
   align-items: flex-start;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn .primary {
+  font-size: clamp(1.35rem, 4.5vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.btn .secondary {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  opacity: 0.65;
 }
 
 .btn .meta {

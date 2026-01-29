@@ -43,11 +43,13 @@ app.innerHTML = `
 
     <section class="card">
       <button class="btn inbound" data-direction="inbound">
-        Inbound (Go to work)
+        <span class="primary">Go to work</span>
+        <span class="secondary">Inbound</span>
         <span class="meta">${STATIONS.home} → ${STATIONS.work}</span>
       </button>
       <button class="btn outbound" data-direction="outbound">
-        Outbound (Go home)
+        <span class="primary">Go home</span>
+        <span class="secondary">Outbound</span>
         <span class="meta">${STATIONS.work} → ${STATIONS.home}</span>
       </button>
     </section>
