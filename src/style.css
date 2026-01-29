@@ -14,18 +14,32 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
-  min-height: 100vh;
-  background: transparent;
+  min-height: 100%;
+  background: radial-gradient(
+    circle at top,
+    #f8efe2 0%,
+    #f3e7d7 40%,
+    #efe0cb 100%
+  );
+}
+
+body {
+  min-height: 100svh;
+  background-attachment: fixed;
 }
 
 #app {
-  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px 18px;
+  padding: calc(24px + env(safe-area-inset-top))
+    calc(18px + env(safe-area-inset-right))
+    calc(24px + env(safe-area-inset-bottom))
+    calc(18px + env(safe-area-inset-left));
 }
 
 .screen {
